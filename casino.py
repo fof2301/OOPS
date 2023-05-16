@@ -82,6 +82,45 @@ def blackjack():
         return -20
     else:
         pass
+    card7=cards()
+    print_card(card7.suite,card7.number,card7.suite)
+    total=total+card7.number
+    print("HAHAHAhahhaaaaaaa.......")
+    if total>21:
+        print("YOU LOST")
+        print("-10 from wallet")
+        return 10
+    elif total==21:
+        print("YOU won HAHAHA")
+        return -20
+    else:
+        pass
+    card8=cards()
+    print_card(card8.suite,card8.number,card8.suite)
+    total=total+card8.number
+    print("HAHAHAhahhaaaaaaa.......")
+    if total>21:
+        print("YOU LOST")
+        print("-10 from wallet")
+        return 10
+    elif total==21:
+        print("YOU won HAHAHA")
+        return -20
+    else:
+        pass
+    card9=cards()
+    print_card(card9.suite,card9.number,card9.suite)
+    total=total+card9.number
+    print("HAHAHAhahhaaaaaaa.......")
+    if total>21:
+        print("YOU LOST")
+        print("-10 from wallet")
+        return 10
+    elif total==21:
+        print("YOU won HAHAHA")
+        return -20
+    else:
+        pass
     
 
 games=["TEEN PATTI", "BLACKJACK"]
@@ -91,14 +130,15 @@ def available_Games():
         print(f"{counter}.{x}")
         counter+=1
 tprint("Welcome")
-while(True):
+while(wallet>0):
     print("1.PLAY")
     print("2.EXIT")
     print("3.WALLET")
-    play=int(input("? \n"))
-    if play==2:
+    play="1"
+    (input("? \n"))
+    if play=="2":
         break
-    elif play==3:
+    elif play=="3":
         print(wallet)
         continue
     else:
@@ -108,4 +148,5 @@ while(True):
     game=int(input())
     if game==2:
         wallet=wallet-blackjack()
+print("GO AWAY PEASENT")        
         
